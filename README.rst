@@ -16,11 +16,15 @@ Overview
 + provide shell commands: blob_list, blob_tier, blob_upload, blob_download, blob_delete
 
 $ export AZURE_STORAGE_ACCOUNT=azureblobcliaccounttest  
+
 $ export AZURE_CONTAINER_NAME=azureblobclicontainertest  
+
 $ export AZURE_BLOB_KEY=azureblobcliaccounttest_SAS_token  
+
 $ blob_list  
 
 $ # upload and set archive tier  
+
 $ ls -l | awk 'NR>3{print $9}' | xargs -n 1 -P 4 -I filename blob_upload -f filename -bf archive_folder -t archive
 
 =======
