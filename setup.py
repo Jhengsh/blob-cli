@@ -19,7 +19,7 @@ CLASSIFIERS = [
 
 setup(
     name='blob-cli',
-    version='0.0.2',
+    version='0.0.2.dev',
     author='Hsueh-Hung Cheng',
     author_email='jhengsh.email@gmail.com',
     url='https://github.com/Jhengsh/blob-cli',
@@ -34,6 +34,5 @@ setup(
     packages=find_packages(),
     license='MIT',
     platforms='any',
-    python_requires='!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*',
     install_requires=["azure-storage-blob"],
 )
